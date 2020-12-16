@@ -7,7 +7,7 @@ if [ -f /mnt/mmcblk0p2/R2S*.zip ]; then
 	echo -e '\e[92m今天固件已下载，准备解压\e[0m'
 else
 	echo -e '\e[91m今天的固件还没更新，尝试下载昨天的固件\e[0m'
-	wget https://github.com/klever1988/nanopi-openwrt/releases/download/R2S-Minimal-2020-12-09/R2S-Minimal-2020-12-14-ROM.zip
+	wget https://github.com/klever1988/nanopi-openwrt/releases/download/R2S-Minimal-2020-12-14/R2S-Minimal-2020-12-14-ROM.zip
 	if [ -f /mnt/mmcblk0p2/R2S*.zip ]; then
 		echo -e '\e[92m昨天的固件已下载，准备解压\e[0m'
 	else
